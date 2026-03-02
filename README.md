@@ -1,4 +1,4 @@
-# \#  CMOS Design and SPICE Simulation Workshop 2026
+# \# CMOS Design and SPICE Simulation Workshop 2026
 
 # 
 
@@ -6,13 +6,13 @@
 
 # 
 
-# \##  Basic Details
+# \## Basic Details
 
 # 
 
 # \*\*Name:\*\* Maaz Mahmood Siddique  
 
-# \*\*College:\*\* Netaji Subhas University of Technology 
+# \*\*College:\*\* Netaji Subhas University of Technology   
 
 # \*\*Email ID:\*\* maazms999@gmail.com  
 
