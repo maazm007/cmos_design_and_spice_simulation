@@ -1,6 +1,6 @@
 # CMOS Design and SPICE Simulation Workshop 2026
 
-This workshop is based on understanding the working of MOS transistor. It covers the various modes of operation, some short channel effects, CMOS inverter voltage transfer characteristics, noise margin and more such parameters. Proper analysis along with simulation has also been carried out using Ngspice open source tools that uses SKY130 PDK. The instructor for this course is Kunal Ghosh Sir and Radhika Mam
+This workshop is based on understanding the working of the MOS transistor. It covers the various modes of operation, some short channel effects, CMOS inverter voltage transfer characteristics, noise margin, and more such parameters. Proper analysis, along with simulation, has also been carried out using Ngspice open source tools that use SKY130 PDK. The instructor for this course is Kunal Ghosh Sir and Radhika Mam
 
 ## Basic Details
 
@@ -27,7 +27,7 @@ This workshop is based on understanding the working of MOS transistor. It covers
 
 ### *The following image describes the structure of NMOS*  
 
-<image>
+<img width="1600" height="900" alt="1" src="https://github.com/user-attachments/assets/cd4e8fd9-00bd-44f1-96c4-304f591b4af6" />
 
 ### Threshold Voltage
 It is defined as the Gate-Source voltage required to form the channel between the Source and Drain n-type diffusion. It is generally represented by **V<sub>T</sub>**  
@@ -36,22 +36,22 @@ It is defined as the Gate-Source voltage required to form the channel between th
 **V<sub>GS</sub> = 0, Drain, Body, and Source are connected to GND**  
 In this configuration, the circuit will behave in such a way that there are two back-to-back connected diodes between the Source and Drain region, due to which there will be no current flow, and since gate-source voltage is zero, there is no channel formed  
 
-<image>  
-  
+<img width="1600" height="900" alt="3" src="https://github.com/user-attachments/assets/d5ad9d41-49e8-44ac-9288-cafd98cc23cd" />
+ 
 **V<sub>GS</sub> = small positive voltage, Drain, Body, and Source are connected to GND**  
 In this configuration, some positive charges will develop on the gate terminal, due to which it repels the positive charges of the substrate near the interface. As soon as the positive charges are repelled away, negative charge carriers will start attracting at the interface, and a depletion region will be formed between the substrate and negative charge carriers
   
 **V<sub>GS</sub> = increase positive voltage, Drain, Body, and Source are connected to GND**   
 As we increase the gate voltage, more positive charges are collected on the gate terminal; alternatively, more negative carriers are attracted towards the interface region, and the depletion width starts increasing by a significant amount. As a larger number of negative carriers are collected at the interface, this phenomenon is termed as Inversion of Channel region or **Surface Inversion or Strong Inversion**.  
   
-The gate voltage at which this inversion takes place is termed as **Threshold Voltage**  
+The gate voltage at which this inversion takes place is termed **Threshold Voltage**  
  
-<image>
+<img width="1600" height="900" alt="4" src="https://github.com/user-attachments/assets/f3be1e7d-4fe1-4d76-863b-0186750d4988" />
   
 **V<sub>GS</sub> = increase more than V<sub>T</sub>, Drain, Body, and Source are connected to GND**  
 If we further increase the Gate voltage above the threshold voltage, no more negative charges are left in the depletion region that can be attracted towards the channel region. So, it will start pulling the electrons from the source n+ type diffusion region, which has a large number of negative charges, and due to this, a continuous channel will be formed  
   
-<image>
+<img width="1600" height="900" alt="5" src="https://github.com/user-attachments/assets/0048c02d-1219-40b5-a943-a48164c95c70" />
 
 ### Body Effect  
 Ideally, the body and the source terminal are connected to GND. Now, if we apply a potential difference across the source and body terminal, **V<sub>SB</sub> = +ve voltage**, the depletion width near the source terminal increases. Also, due to positive supply, it will attract a few negative charges of the channel, due to which more gate voltage has to be applied to form the channel, which ultimately results in **increasing of threshold voltage**. The expression of threshold voltage is given as,  
@@ -65,7 +65,7 @@ $\gamma$: Body-effect coefficient
 $V_{SB}$: Source-to-body voltage  
 $\phi_F$: Fermi potential  
   
-<image>  
+<img width="1600" height="900" alt="6" src="https://github.com/user-attachments/assets/ae6eff5a-0665-4d2e-aafa-d164a3c42b63" />
   
 ### Resistive Mode of Operation  
 After the Strong Inversion happens, we will apply a **small positive voltage** at the drain terminal. Earlier, the entire channel had a potential of V<sub>GS</sub> across it, but, on application of V<sub>DS</sub> voltage, the potential difference across the channel will vary. It will be higher at the source end and lowest at the drain end. The effective voltage of the channel length is given by, <p align="center">
@@ -73,9 +73,9 @@ After the Strong Inversion happens, we will apply a **small positive voltage** a
 </p>  
 where x varies from 0  to L
   
-* When we apply the positive voltage at drain terminal, the channel shape will no longer be uniform. Due to variation in effcetive voltage of channel length, **the shape of the channel gets tapered**, as shown in the below figure, 
+* When we apply the positive voltage at the drain terminal, the channel shape will no longer be uniform. Due to variation in effective voltage of channel length, **the shape of the channel gets tapered**, as shown in the figure below. 
  
-<image>  
+<img width="1600" height="900" alt="7" src="https://github.com/user-attachments/assets/b8592efe-5a7f-4552-829a-94c6ece339f7" /> 
   
 * From a semiconductor device point of view, there are two types of current, namely Drift Current and Diffusion Current. Drift Current is mainly due to external applied voltage, while Diffusion Current is due to the concentration gradient  
   
@@ -141,7 +141,7 @@ where λ is the Channel Length Modulation parameter
 > When V<sub>DS</sub> < V<sub>GS</sub> - V<sub>T</sub>: Linear mode of operation  
 > When V<sub>DS</sub> ≥ V<sub>GS</sub> - V<sub>T</sub>: Saturation mode of operation
   
-<image>
+<img width="1600" height="900" alt="8" src="https://github.com/user-attachments/assets/0a353d3c-fe86-40e8-ae7e-13956a7242ac" />
 
 ---------------------------------------------------------------------  
   
@@ -158,11 +158,11 @@ A SPICE model parameter is a numerical value used in a transistor or device mode
   
 ### Workflow of SPICE  
   
-<image>    
+<img width="1600" height="597" alt="9" src="https://github.com/user-attachments/assets/bab24c65-c9d9-4a86-b8b1-3d9232c0ca05" />
   
 ### Creating SPICE Netlist  
   
-<image>  
+<img width="1600" height="900" alt="2" src="https://github.com/user-attachments/assets/53ee7956-4eb9-4ba0-ac31-1fe9c86990b1" />
   
 Following is the spice netlist of the above circuit  
 ```
@@ -174,28 +174,28 @@ Vin in 0 2.5
 ### What are Corners specified in the tech files of SKY130?  
 Corners refer to process-voltage-temperature variations (like TT (typical type), SS (slow slow), FF (fast fast), SF (slow fast), and FS (fast slow)) used to verify that a design works reliably under worst-case manufacturing and operating conditions  
   
-<image>  
+<img width="1920" height="981" alt="Screenshot from 2026-03-07 04-22-46" src="https://github.com/user-attachments/assets/831fd863-678c-4df0-959d-161777b7334b" />
    
 Now, we will simulate the above circuit using NgSpice and try to plot the Drain Current Characteristics. Following is the plot:  
   
-<image>  
-  
-<image>  
-  
+<img width="1920" height="981" alt="Screenshot from 2026-03-07 04-35-35" src="https://github.com/user-attachments/assets/13089e68-109b-4ba1-a7f0-bbaff8cee4c9" />
+ 
+<img width="1920" height="981" alt="Screenshot from 2026-03-07 04-36-12" src="https://github.com/user-attachments/assets/4126ad6b-d80d-46ee-bddd-cc9221929d3c" />
+ 
 * Through the simulation plot, we can clearly see that at different values of V<sub>GS</sub> voltage, the drain current is increasing by **square of (V<sub>GS</sub> - V<sub>T</sub>)<sup>2</sup>**. One can easily notice the difference between the adjacent drain current curves at different gate-source voltages  
   
-<image>  
+<img width="1600" height="900" alt="10" src="https://github.com/user-attachments/assets/edfc9272-bc1e-43a2-9f16-ff7b7c884bd4" />
   
 * Now, if we consider the lower technology nodes, but we tend to keep the W/L ratio the same, we expect that our simulation results should match. So let's analyse how the circuit behaves at lower technology nodes while keeping the W/L ratio the same  
   
-<image>  
-  
+<img width="1600" height="900" alt="11" src="https://github.com/user-attachments/assets/90d84519-2dd4-4888-af7f-678e039f1fdd" />
+ 
 > **Conclsuion**  
 > We noticed that for the same V<sub>GS</sub> voltage, the maximum drain current decreases by a significant amount in lower technology nodes. This happens due to the **Short Channel Effect** known as **Velocity Saturation**. Also, the lower technology nodes show the linear dependence between adjacent drain current curves  
   
 * Now let's analyse the **Transfer Characterstics**. Here, we will fix the V<sub>DS</sub> voltage and sweep the V<sub>GS</sub> voltage between 0V and 1.8V. We will perform this analysis for both technologies and try to study the difference between the two characteristics  
   
-<image>  
+<img width="1600" height="900" alt="12" src="https://github.com/user-attachments/assets/a7cf39c9-c3aa-429a-81ae-0f649c1c2d92" />
   
 --------------------------------------------------  
 ### Velocity Saturation  
@@ -238,23 +238,23 @@ From the equation, we find that if we try to shift towards lower nodes, the curr
  
 * Transistor as a Switch: Gate-Source voltage plays an important role in the current flow. It can either allow a current to flow or block it.  
   
-<image>  
+<img width="1600" height="900" alt="13" src="https://github.com/user-attachments/assets/e3fa9bbd-5ec7-4330-992a-87babd1ae81e" />
   
-<image>  
+<img width="1600" height="900" alt="14" src="https://github.com/user-attachments/assets/7c278c9c-474c-4772-8934-f4424b521952" />
   
 * When Vin = V<sub>DD</sub>, NMOS turns ON, and PMOS turns OFF, hence there will be a path from load capacitor to the GND, due to which at steady state, the capacitor will be fully discharged to GND and V<sub>OUT</sub> = 0V  
 * When Vin = V<sub>SS</sub>, PMOS turns ON, and NMOS turns OFF, hence there will be a direct path from load capacitor to Supply Voltage, due to which the capacitor will start charging, and at steady state, the load capacitor will be fully charged to V<sub>DD</sub>  
   
-<image>  
+<img width="1600" height="900" alt="15" src="https://github.com/user-attachments/assets/f177f80a-7e64-46e4-84f8-ae97101bfad5" />
   
 * Deducing the Drain Characteristics for NMOS and PMOS  
   
-<image>  
+<img width="1600" height="900" alt="16" src="https://github.com/user-attachments/assets/351d53ba-98e9-49bd-ad79-6026638d39f6" />
   
 Since we have deduced the load curve of NMOS and PMOS, now we will merge these curves to obtain the **Voltage Transfer Characteristics for CMOS Inverter**  
   
-<image>  
-  
+<img width="1600" height="900" alt="17" src="https://github.com/user-attachments/assets/1c1ea28f-bb7e-4ec3-8071-8df8318eed65" />
+ 
 ---------------------------------------------------------  
   
 ### Switching Threshold of CMOS  
@@ -270,9 +270,9 @@ $$r = \frac{\left(\frac{W_p}{L_p}\right)K_p' \, V_{dsatp}}{\left(\frac{W_n}{L_n}
   
 The following image shows the switching threshold of CMOS  
   
-<image>  
+<img width="1920" height="981" alt="Screenshot from 2026-03-08 04-28-33" src="https://github.com/user-attachments/assets/73fd990b-a51a-4079-9c54-efb439d9d6d0" /> 
   
-<image>  
+<img width="1600" height="900" alt="18" src="https://github.com/user-attachments/assets/22c3eb76-cdbd-4b77-9043-e6ec38b5efc7" />
   
 * **Rise Delay (t<sub>PLH</sub>)**: Rise delay is the time required for the **output to rise from 50% of V<sub>DD</sub>** after the **input has crossed 50% of V<sub>DD</sub>** during a **low-to-high output transition**.
 
@@ -288,11 +288,11 @@ The following image shows the switching threshold of CMOS
   
 The following image shows the transient analysis of the CMOS inverter and also involves the calculation of Rise Time and Fall Time  
   
-<image>  
+<img width="1920" height="981" alt="Screenshot from 2026-03-08 04-43-40" src="https://github.com/user-attachments/assets/ea454e34-d863-4406-b327-ae91731f3522" />
+ 
+<img width="1600" height="900" alt="19" src="https://github.com/user-attachments/assets/aad54ca6-6617-4f0b-b8db-27c5ca2f1ab4" />
   
-<image>  
-  
-<image>  
+<img width="1600" height="900" alt="20" src="https://github.com/user-attachments/assets/edd2b327-1079-4123-934c-d98af273d17d" /> 
   
 > **Conclusion**  
 > When we increase the W<sub>P</sub> with respect to W<sub>L</sub>, the transfer characteristics curve shifts towards the right side and the switching threshold voltage increases. Also, the rise time delay falls by a significant amount, while there is a small increase in the fall time delay  
@@ -302,7 +302,7 @@ The following image shows the transient analysis of the CMOS inverter and also i
 ### Noise Margin  
 It is the maximum allowable noise voltage input signal can have without causing the incorrect output signal value, ensuing robust logic level, i.e., 0 or 1  
   
-<image>  
+<img width="1600" height="900" alt="21" src="https://github.com/user-attachments/assets/b2f54eee-1834-4efc-9ec1-7b5e0fa6c023" />
   
 * Any input voltage between 0 and V<sub>IL</sub> will be treated as logic low  
 * Any input voltage between V<sub>IH</sub> and V<sub>DD</sub> will be treated as logic high  
@@ -312,39 +312,38 @@ It is the maximum allowable noise voltage input signal can have without causing 
 * (NM)<sub>L</sub> = V<sub>IL</sub> - V<sub>OL</sub>  
 * **Noise Margin = max(NM<sub>H</sub>,  NM<sub>L</sub>)**  
   
-<image>  
-  
+<img width="1600" height="900" alt="22" src="https://github.com/user-attachments/assets/4a20ffa0-d6f2-41d6-ad4e-759b29143c58" />
+   
 Now, let's perform a SPICE simulation of the CMOS Inverter and try to calculate the Noise Margin.  
   
-<image>  
-  
+<img width="1600" height="900" alt="23" src="https://github.com/user-attachments/assets/8c6faaaf-7906-470a-a74c-54d366b6292e" />
+ 
 ----------------------------------------------------------------------------  
   
 ### Power Supply Scaling  
 At lower technology nodes, the value of the power supply also reduces (low supply application) to maintain the efficient working of devices. We expect similar behaviour of our devices at lower technology nodes also. Let's simulate and try to study the results,  
   
-<image>  
-  
+<img width="1600" height="900" alt="24" src="https://github.com/user-attachments/assets/cbaf4448-38f1-4b3d-9fa1-807d6d96486d" />
+   
 > **Advantages and Disadvantages of reducing the power supply**  
-> * For lower value of voltage supply, the gain factor is large compared to higher value of supply voltage
-> * For lower value of voltage supply, the energy consumption is much lesser than those operating at higher supply voltage  
-> * Lower supply voltage cannot charge or discharege the load capacitance properly. Meaning the rise time and fall time will not be sufficient for the efficient working of devices, i.e., the rise time and fall time will increase which will impact the performance of device  
+> * For a lower value of voltage supply, the gain factor is large compared to a higher value of supply voltage
+> * For a lower value of voltage supply, the energy consumption is much less than that of operating at a higher supply voltage  
+> * Lower supply voltage cannot charge or discharge the load capacitance properly. Meaning the rise time and fall time will not be sufficient for the efficient working of devices, i.e., the rise time and fall time will increase, which will impact the performance of the device  
   
 ---------------------------------------------------------------------------------  
   
 ### Device Variation  
   
-* **Etching Process:** Etching in semiconductor manufacturing is a critical, precise process used to remove unwanted material from a wafer's surface, creating intricate 3D patterns, circuits, and components. Actual mask may create an uneven or distorted channel legth or width, which will directly impact the drain current of MOS device  
+* **Etching Process:** Etching in semiconductor manufacturing is a critical, precise process used to remove unwanted material from a wafer's surface, creating intricate 3D patterns, circuits, and components. An actual mask may create an uneven or distorted channel length or width, which will directly impact the drain current of the MOS device   
+<img width="1600" height="900" alt="25" src="https://github.com/user-attachments/assets/2bb7adfe-1ee5-46d4-9fd5-3194813a850d" />
   
-<image>  
+* **Oxide Thickness:** During fabrication, the oxidation process may sometimes result in uneven formation or deposition of the oxide layer, due to which the oxide thickness changes, and it will ultimately result in variation of drain current  
   
-* **Oxide Thickness:** During fabrication, oxidation process may sometimes results in uneven formlation or deposition oxide layer due to which the oxide thickness changes and it will ultimately results in variation of drain current  
+<img width="1536" height="661" alt="ChatGPT Image Mar 8, 2026, 03_30_13 PM" src="https://github.com/user-attachments/assets/1cdc6bbd-7213-4ad6-bddd-74c49e69305f" />
   
-<image>  
+* Now, let's perform some SPICE simulation and find whether these device variations actually affect the performance of the CMOS Inverter  
   
-* Now, let's perform some SPICE simulation and find whether these device variations actually affects the performance of CMOS Inverter  
-  
-<image>  
-  
+<img width="1600" height="900" alt="26" src="https://github.com/user-attachments/assets/45c1e716-5090-4bec-85db-d0c237e89d46" />
+
 > **Conclusion**  
-> CMOS Inverter operation is kept intact and is independent of any variation in parameter or device variation. This shows that CMOS Inverter is robust in nature and is immune to any kind of distortion that may occur. Although we increase the drive strength of PMOS at larger extent than NMOS, the shift in Switching Threshold is not much, which again proves that CMOS Inverter is robust and is not affected by even large variations
+> CMOS Inverter operation is kept intact and is independent of any variation in parameter or device variation. This shows that the CMOS Inverter is robust in nature and is immune to any kind of distortion that may occur. Although we increase the drive strength of PMOS at larger extent than NMOS, the shift in Switching Threshold is not much, which again proves that the CMOS Inverter is robust and is not affected by even large variations
