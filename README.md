@@ -276,9 +276,9 @@ The following image shows the switching threshold of CMOS
   
 * **Rise Delay (t<sub>PLH</sub>)**: Rise delay is the time required for the **output to rise from 50% of V<sub>DD</sub>** after the **input has crossed 50% of V<sub>DD</sub>** during a **low-to-high output transition**.
 
-$$
-t_{pLH} = t_{out}(50\%V_{DD}) - t_{in}(50\%V_{DD})
-$$    
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?t_%7BpLH%7D%3Dt_%7Bout%7D%2850%25V_%7BDD%7D%29-t_%7Bin%7D%2850%25V_%7BDD%7D%29"/>
+</p>    
   
 * **Fall Delay (t<sub>PHL</sub>)**: Fall delay is the time required for the **output to fall from 50% of V<sub>DD</sub>** after the **input has crossed 50% of V<sub>DD</sub>** during a **high-to-low output transition**.
 
