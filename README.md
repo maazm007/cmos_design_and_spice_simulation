@@ -45,8 +45,8 @@ In this configuration, some positive charges will develop on the gate terminal, 
 
 **V<sub>GS</sub> = increase positive voltage, Drain, Body, and Source are connected to GND**   
 As we increase the gate voltage, more positive charges are collected on the gate terminal; alternatively, more negative carriers are attracted towards the interface region, and the depletion width starts increasing by a significant amount. As a larger number of negative carriers are collected at the interface, this phenomenon is termed as Inversion of Channel region or **Surface Inversion or Strong Inversion**.  
-  
-> The gate voltage at which this inversion takes place is termed **Threshold Voltage**
+   
+* The gate voltage at which this inversion takes place is termed **Threshold Voltage**
 
 <br>
  
@@ -56,8 +56,7 @@ As we increase the gate voltage, more positive charges are collected on the gate
 
 **V<sub>GS</sub> = increase more than V<sub>T</sub>, Drain, Body, and Source are connected to GND**  
 If we further increase the Gate voltage above the threshold voltage, no more negative charges are left in the depletion region that can be attracted towards the channel region. So, it will start pulling the electrons from the source n+ type diffusion region, which has a large number of negative charges, and due to this, a continuous channel will be formed  
-
-<br>   
+  
 
 <img width="1600" height="900" alt="5" src="https://github.com/user-attachments/assets/0048c02d-1219-40b5-a943-a48164c95c70" />
 
