@@ -94,6 +94,7 @@ where x varies from 0  to L
 
 <div>
 <em>Drain Current = (Velocity of Charge Carriers X Charge) over the entire Channel Width</em>
+<br>  
 <br>
 <img src="https://latex.codecogs.com/svg.image?I_D=-v_n(x)\,Q_I(x)\,W" />
 </div>
@@ -218,16 +219,17 @@ Till now, we have come across three different formulas for drain current, which 
 <img src="https://latex.codecogs.com/svg.image?I_D%3D%20K_nV_%7Bmin%7D%5BV_%7BOV%7D-%5Cfrac%7BV_%7Bmin%7D%7D%7B2%7D%5D%281%2B%5Clambda%20V_%7BDS%7D%29"/>
 </p>
 
-<br>
 
 <p align="center">
 <img src="https://latex.codecogs.com/svg.image?V_%7Bmin%7D%3D%5Cmin%28V_%7BOV%7D%2C%20V_%7BDS%7D%2C%20V_%7BDSAT%7D%29"/>
 </p>  
   
 * For V<sub>min</sub> = V<sub>DSat</sub>, the current equation will be given by,  
+  
 <p align="center">
-<img src="https://latex.codecogs.com/svg.image?I_D=\mu_nC_{ox}\frac{W}{L}\left[V_{DSAT}(V_{GS}-V_T)-\frac{V_{DSAT}^2}{2}\right](1+\lambda V_{DS})" />
+<img src="https://latex.codecogs.com/svg.image?I_D%3D%5Cmu_nC_%7Box%7D%5Cfrac%7BW%7D%7BL%7D%5BV_%7BDSAT%7D%28V_%7BGS%7D-V_T%29-%5Cfrac%7BV_%7BDSAT%7D%5E2%7D%7B2%7D%5D%281%2B%5Clambda%20V_%7BDS%7D%29"/>
 </p>  
+ 
 From the equation, we find that if we try to shift towards lower nodes, the current should increase, but actually this does not happen, because at lower nodes current reduces due to the Velocity Saturation Effect  
   
 -----------------------------------------------------------------  
