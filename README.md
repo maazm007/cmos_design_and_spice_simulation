@@ -385,8 +385,6 @@ At lower technology nodes, the value of the power supply also reduces (low suppl
 <br>
     
 * **Oxide Thickness:** During fabrication, the oxidation process may sometimes result in uneven formation or deposition of the oxide layer, due to which the oxide thickness changes, and it will ultimately result in variation of drain current
-
-<br>
   
 <img width="1536" height="661" alt="ChatGPT Image Mar 8, 2026, 03_30_13 PM" src="https://github.com/user-attachments/assets/1cdc6bbd-7213-4ad6-bddd-74c49e69305f" />
 
