@@ -345,6 +345,7 @@ At lower technology nodes, the value of the power supply also reduces (low suppl
   
 <img width="1600" height="900" alt="26" src="https://github.com/user-attachments/assets/45c1e716-5090-4bec-85db-d0c237e89d46" />
 
-<br>
+<br>  
+
 > **Conclusion**  
 > CMOS Inverter operation is kept intact and is independent of any variation in parameter or device variation. This shows that the CMOS Inverter is robust in nature and is immune to any kind of distortion that may occur. Although we increase the drive strength of PMOS at larger extent than NMOS, the shift in Switching Threshold is not much, which again proves that the CMOS Inverter is robust and is not affected by even large variations
