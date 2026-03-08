@@ -55,9 +55,9 @@ If we further increase the Gate voltage above the threshold voltage, no more neg
 
 ### Body Effect  
 Ideally, the body and the source terminal are connected to GND. Now, if we apply a potential difference across the source and body terminal, **V<sub>SB</sub> = +ve voltage**, the depletion width near the source terminal increases. Also, due to positive supply, it will attract a few negative charges of the channel, due to which more gate voltage has to be applied to form the channel, which ultimately results in **increasing of threshold voltage**. The expression of threshold voltage is given as,  
-$$
-V_{TH} = V_{TH0} + \gamma \left( \sqrt{2\phi_F + V_{SB}} - \sqrt{2\phi_F} \right)
-$$  
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?V_{TH}=V_{TH0}+\gamma\left(\sqrt{2\phi_F+V_{SB}}-\sqrt{2\phi_F}\right)" />
+</p>  
 where,   
 $V_{TH0}$: Threshold voltage when $V_{SB} = 0$  
 $\gamma$: Body-effect coefficient  
