@@ -210,7 +210,9 @@ Hence, the drain current equation will be changed to,
   
 Till now, we have come across three different formulas for drain current, which makes it harder for us to remember. Hence, we came up with the **Unified Current Model**, which is given as,  
 
-<img src="https://latex.codecogs.com/svg.image?I_D=0\quad\text{for}\quad V_{OV}<0\quad(\text{Cutoff Mode})" />
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?I_D%3D0%20%5Cquad%20%5Ctext%7Bfor%7D%20%5Cquad%20V_%7BOV%7D%3C0%20%5Cquad%20%28Cutoff%20Mode%29"/>
+</p>
 
 <p align="center">
 <img src="https://latex.codecogs.com/svg.image?I_D%3D%20K_nV_%7Bmin%7D%5BV_%7BOV%7D-%5Cfrac%7BV_%7Bmin%7D%7D%7B2%7D%5D%281%2B%5Clambda%20V_%7BDS%7D%29"/>
