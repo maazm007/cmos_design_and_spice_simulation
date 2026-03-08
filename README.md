@@ -212,10 +212,15 @@ Till now, we have come across three different formulas for drain current, which 
 
 <img src="https://latex.codecogs.com/svg.image?I_D=0\quad\text{for}\quad V_{OV}<0\quad(\text{Cutoff Mode})" />
 
-<img src="https://latex.codecogs.com/svg.image?I_D=K_nV_{min}\left[V_{OV}-\frac{V_{min}}{2}\right](1+\lambda V_{DS})" />
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?I_D%3D%20K_nV_%7Bmin%7D%5BV_%7BOV%7D-%5Cfrac%7BV_%7Bmin%7D%7D%7B2%7D%5D%281%2B%5Clambda%20V_%7BDS%7D%29"/>
+</p>
 
-<img src="https://latex.codecogs.com/svg.image?V_{min}=\min(V_{OV},V_{DS},V_{DSAT})" />  
-where V<sub>OV</sub> represents Overdrive Voltage given by V<sub>GS</sub> - V<sub>T</sub>  
+<br>
+
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?V_%7Bmin%7D%3D%5Cmin%28V_%7BOV%7D%2C%20V_%7BDS%7D%2C%20V_%7BDSAT%7D%29"/>
+</p>  
   
 * For V<sub>min</sub> = V<sub>DSat</sub>, the current equation will be given by,  
 <p align="center">
