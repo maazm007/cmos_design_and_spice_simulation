@@ -390,6 +390,7 @@ At lower technology nodes, the value of the power supply also reduces (low suppl
 <img width="1536" height="661" alt="ChatGPT Image Mar 8, 2026, 03_30_13 PM" src="https://github.com/user-attachments/assets/1cdc6bbd-7213-4ad6-bddd-74c49e69305f" />
 
 <br>
+<br>
       
 * Now, let's perform some SPICE simulation and find whether these device variations actually affect the performance of the CMOS Inverter
 
