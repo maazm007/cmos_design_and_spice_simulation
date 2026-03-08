@@ -58,6 +58,7 @@ Ideally, the body and the source terminal are connected to GND. Now, if we apply
 <p align="center">
 <img src="https://latex.codecogs.com/svg.image?V_{TH}=V_{TH0}+\gamma\left(\sqrt{2\phi_F+V_{SB}}-\sqrt{2\phi_F}\right)" />
 </p>  
+  
 where,   
 $V_{TH0}$: Threshold voltage when $V_{SB} = 0$  
 $\gamma$: Body-effect coefficient  
