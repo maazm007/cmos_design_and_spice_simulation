@@ -36,14 +36,13 @@ It is defined as the Gate-Source voltage required to form the channel between th
 **V<sub>GS</sub> = 0, Drain, Body, and Source are connected to GND**  
 In this configuration, the circuit will behave in such a way that there are two back-to-back connected diodes between the Source and Drain region, due to which there will be no current flow, and since gate-source voltage is zero, there is no channel formed  
 
-<img width="1600" height="900" alt="3" src="https://github.com/user-attachments/assets/d5ad9d41-49e8-44ac-9288-cafd98cc23cd" />
-<br><br>  
+<img width="1600" height="900" alt="3" src="https://github.com/user-attachments/assets/d5ad9d41-49e8-44ac-9288-cafd98cc23cd" />  
+
+<br> 
 
 **V<sub>GS</sub> = small positive voltage, Drain, Body, and Source are connected to GND**  
 In this configuration, some positive charges will develop on the gate terminal, due to which it repels the positive charges of the substrate near the interface. As soon as the positive charges are repelled away, negative charge carriers will start attracting at the interface, and a depletion region will be formed between the substrate and negative charge carriers  
 
-<br>
-  
 **V<sub>GS</sub> = increase positive voltage, Drain, Body, and Source are connected to GND**   
 As we increase the gate voltage, more positive charges are collected on the gate terminal; alternatively, more negative carriers are attracted towards the interface region, and the depletion width starts increasing by a significant amount. As a larger number of negative carriers are collected at the interface, this phenomenon is termed as Inversion of Channel region or **Surface Inversion or Strong Inversion**.  
   
@@ -53,11 +52,13 @@ As we increase the gate voltage, more positive charges are collected on the gate
  
 <img width="1600" height="900" alt="4" src="https://github.com/user-attachments/assets/f3be1e7d-4fe1-4d76-863b-0186750d4988" />  
 
-<br><br>  
+<br>  
 
 **V<sub>GS</sub> = increase more than V<sub>T</sub>, Drain, Body, and Source are connected to GND**  
 If we further increase the Gate voltage above the threshold voltage, no more negative charges are left in the depletion region that can be attracted towards the channel region. So, it will start pulling the electrons from the source n+ type diffusion region, which has a large number of negative charges, and due to this, a continuous channel will be formed  
-<br><br>  
+
+<br>   
+
 <img width="1600" height="900" alt="5" src="https://github.com/user-attachments/assets/0048c02d-1219-40b5-a943-a48164c95c70" />
 
 ## Body Effect  
