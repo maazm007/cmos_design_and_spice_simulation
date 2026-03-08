@@ -131,7 +131,7 @@ where x varies from 0  to L
 *This appear to be a perfect **constant current source**, but its not true because as we increase V<sub>DS</sub> above V<sub>GS</sub> - V<sub>T</sub>, depletion region near the drain region increases, and the effective channel length decreases due to which current increases, which is given by*  
   
 <p align="center">
-<img src="https://latex.codecogs.com/svg.image?I_D=\frac{1}{2}\mu_nC_{ox}\frac{W}{L}(V_{GS}-V_T)^2(1+\lambda V_{DS})" />
+<img src="https://latex.codecogs.com/svg.image?I_D%3D%5Cfrac%7B1%7D%7B2%7D%5Cmu_nC_%7Box%7D%5Cfrac%7BW%7D%7BL%7D%28V_%7BGS%7D-V_T%29%5E2%281%2B%5Clambda%20V_%7BDS%7D%29"/>
 </p>  
 
 where λ is the Channel Length Modulation parameter  
