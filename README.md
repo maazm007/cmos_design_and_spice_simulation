@@ -14,7 +14,7 @@ This workshop is based on understanding the working of the MOS transistor. It co
 -------------------------------------------------------------------------------------------------------------------------
 
 
-### Why do we need SPICE?
+## Why do we need SPICE?
 * SPICE is used to design a circuit and then perform various analysis like DC Analysis and Transient Analysis, to study the behaviour of the circuit when applying different input voltages
 * Mainly, SPICE is used to perform the characterization of semiconductor devices. Characterization of a transistor is the process of measuring its electrical behavior to determine how it will function in a real circuit. By "sweeping" voltages and currents at the terminals, engineers create graphs called characteristic curves (e.g., input and output plots) that reveal critical performance data, such as threshold voltages, current gains, and switching limits. This data turns a physical device into a reliable mathematical model, ensuring that it meets design standards before it is used as a switch or amplifier in electronic systems
 * Delay is the most important parameter in VLSI, but have you ever wondered where these delays come in the circuit? The transistor's W/L ratio plays an important role in determining the circuit's various parameters. How the W/L ratio is going to affect the speed, delay, current, and various other parameters is what we study using SPICE simulations
@@ -55,8 +55,9 @@ As we increase the gate voltage, more positive charges are collected on the gate
 <br>  
 
 **V<sub>GS</sub> = increase more than V<sub>T</sub>, Drain, Body, and Source are connected to GND**  
-If we further increase the Gate voltage above the threshold voltage, no more negative charges are left in the depletion region that can be attracted towards the channel region. So, it will start pulling the electrons from the source n+ type diffusion region, which has a large number of negative charges, and due to this, a continuous channel will be formed  
-  
+If we further increase the Gate voltage above the threshold voltage, no more negative charges are left in the depletion region that can be attracted towards the channel region. So, it will start pulling the electrons from the source n+ type diffusion region, which has a large number of negative charges, and due to this, a continuous channel will be formed    
+
+<br>  
 
 <img width="1600" height="900" alt="5" src="https://github.com/user-attachments/assets/0048c02d-1219-40b5-a943-a48164c95c70" />
 
@@ -85,6 +86,7 @@ where x varies from 0  to L
 <img width="1600" height="900" alt="7" src="https://github.com/user-attachments/assets/b8592efe-5a7f-4552-829a-94c6ece339f7" />  
 
 <br>  
+<br>
 
 * From a semiconductor device point of view, there are two types of current, namely Drift Current and Diffusion Current. Drift Current is mainly due to external applied voltage, while Diffusion Current is due to the concentration gradient  
   
@@ -188,7 +190,8 @@ Vin in 0 2.5
 ### What are Corners specified in the tech files of SKY130?  
 Corners refer to process-voltage-temperature variations (like TT (typical type), SS (slow slow), FF (fast fast), SF (slow fast), and FS (fast slow)) used to verify that a design works reliably under worst-case manufacturing and operating conditions  
   
-<img width="1920" height="981" alt="Screenshot from 2026-03-07 04-22-46" src="https://github.com/user-attachments/assets/831fd863-678c-4df0-959d-161777b7334b" />
+<img width="1920" height="981" alt="Screenshot from 2026-03-07 04-22-46" src="https://github.com/user-attachments/assets/831fd863-678c-4df0-959d-161777b7334b" />  
+
 <br>  
 
 * Now, we will simulate the above circuit using NgSpice and try to plot the Drain Current Characteristics. Following is the plot:  
@@ -197,23 +200,25 @@ Corners refer to process-voltage-temperature variations (like TT (typical type),
   
 <img width="1920" height="981" alt="Screenshot from 2026-03-07 04-35-35" src="https://github.com/user-attachments/assets/13089e68-109b-4ba1-a7f0-bbaff8cee4c9" />
  
-<img width="1920" height="981" alt="Screenshot from 2026-03-07 04-36-12" src="https://github.com/user-attachments/assets/4126ad6b-d80d-46ee-bddd-cc9221929d3c" />
-<br>    
+<img width="1920" height="981" alt="Screenshot from 2026-03-07 04-36-12" src="https://github.com/user-attachments/assets/4126ad6b-d80d-46ee-bddd-cc9221929d3c" />  
+  
+<br>  
 
 * Through the simulation plot, we can clearly see that at different values of V<sub>GS</sub> voltage, the drain current is increasing by **square of (V<sub>GS</sub> - V<sub>T</sub>)<sup>2</sup>**. One can easily notice the difference between the adjacent drain current curves at different gate-source voltages  
 
 <br> 
 
 <img width="1600" height="900" alt="10" src="https://github.com/user-attachments/assets/edfc9272-bc1e-43a2-9f16-ff7b7c884bd4" />  
+
 <br>  
 
 * Now, if we consider the lower technology nodes, but we tend to keep the W/L ratio the same, we expect that our simulation results should match. So let's analyse how the circuit behaves at lower technology nodes while keeping the W/L ratio the same
 
 <br>
   
-<img width="1600" height="900" alt="11" src="https://github.com/user-attachments/assets/90d84519-2dd4-4888-af7f-678e039f1fdd" />
+<img width="1600" height="900" alt="11" src="https://github.com/user-attachments/assets/90d84519-2dd4-4888-af7f-678e039f1fdd" />  
 
-<br><br>  
+<br>  
 
 > **Conclsuion**  
 > We noticed that for the same V<sub>GS</sub> voltage, the maximum drain current decreases by a significant amount in lower technology nodes. This happens due to the **Short Channel Effect** known as **Velocity Saturation**. Also, the lower technology nodes show the linear dependence between adjacent drain current curves  
@@ -265,24 +270,25 @@ From the equation, we find that if we try to shift towards lower nodes, the curr
   
 <img width="1600" height="900" alt="13" src="https://github.com/user-attachments/assets/e3fa9bbd-5ec7-4330-992a-87babd1ae81e" />
   
-<img width="1600" height="900" alt="14" src="https://github.com/user-attachments/assets/7c278c9c-474c-4772-8934-f4424b521952" />
-<br> 
+<img width="1600" height="900" alt="14" src="https://github.com/user-attachments/assets/7c278c9c-474c-4772-8934-f4424b521952" />  
+
+<br>  
 
 * When Vin = V<sub>DD</sub>, NMOS turns ON, and PMOS turns OFF, hence there will be a path from load capacitor to the GND, due to which at steady state, the capacitor will be fully discharged to GND and V<sub>OUT</sub> = 0V  
 * When Vin = V<sub>SS</sub>, PMOS turns ON, and NMOS turns OFF, hence there will be a direct path from load capacitor to Supply Voltage, due to which the capacitor will start charging, and at steady state, the load capacitor will be fully charged to V<sub>DD</sub>
 
-<br>
-  
-<img width="1600" height="900" alt="15" src="https://github.com/user-attachments/assets/f177f80a-7e64-46e4-84f8-ae97101bfad5" />  ]
-<br> 
+<img width="1600" height="900" alt="15" src="https://github.com/user-attachments/assets/f177f80a-7e64-46e4-84f8-ae97101bfad5" />   
+
+<br>  
 
 * Deducing the Drain Characteristics for NMOS and PMOS  
 
 <br>
   
 <img width="1600" height="900" alt="16" src="https://github.com/user-attachments/assets/351d53ba-98e9-49bd-ad79-6026638d39f6" />  
-<br>
-  
+
+<br>  
+
 * Since we have deduced the load curve of NMOS and PMOS, now we will merge these curves to obtain the **Voltage Transfer Characteristics for CMOS Inverter**
 
 <br>
@@ -329,7 +335,7 @@ The following image shows the transient analysis of the CMOS inverter and also i
   
 <img width="1600" height="900" alt="20" src="https://github.com/user-attachments/assets/edd2b327-1079-4123-934c-d98af273d17d" /> 
   
-<br><br>
+<br>
   
 > **Conclusion**  
 > When we increase the W<sub>P</sub> with respect to W<sub>L</sub>, the transfer characteristics curve shifts towards the right side and the switching threshold voltage increases. Also, the rise time delay falls by a significant amount, while there is a small increase in the fall time delay  
@@ -340,8 +346,9 @@ The following image shows the transient analysis of the CMOS inverter and also i
 It is the maximum allowable noise voltage input signal can have without causing the incorrect output signal value, ensuing robust logic level, i.e., 0 or 1  
   
 <img width="1600" height="900" alt="21" src="https://github.com/user-attachments/assets/b2f54eee-1834-4efc-9ec1-7b5e0fa6c023" />  
-<br>
-  
+
+<br>  
+
 * Any input voltage between 0 and V<sub>IL</sub> will be treated as logic low  
 * Any input voltage between V<sub>IH</sub> and V<sub>DD</sub> will be treated as logic high  
 * Any input voltage between 0 and V<sub>IL</sub> will have the output voltage as logic high  
@@ -353,8 +360,9 @@ It is the maximum allowable noise voltage input signal can have without causing 
 <br>
   
 <img width="1600" height="900" alt="22" src="https://github.com/user-attachments/assets/4a20ffa0-d6f2-41d6-ad4e-759b29143c58" />  
-<br>
-       
+
+<br>  
+
 * Now, let's perform a SPICE simulation of the CMOS Inverter and try to calculate the Noise Margin.
 
 <br>
