@@ -59,7 +59,7 @@ If we further increase the Gate voltage above the threshold voltage, no more neg
 
 <br>  
 
-<img width="1600" height="900" alt="5" src="https://github.com/user-attachments/assets/0048c02d-1219-40b5-a943-a48164c95c70" />
+<img width="1600" height="900" alt="5" src="https://github.com/user-attachments/assets/bee6c2e9-2aa1-4a51-a2c0-2654323d78e8" />
 
 ## Body Effect  
 Ideally, the body and the source terminal are connected to GND. Now, if we apply a potential difference across the source and body terminal, **V<sub>SB</sub> = +ve voltage**, the depletion width near the source terminal increases. Also, due to positive supply, it will attract a few negative charges of the channel, due to which more gate voltage has to be applied to form the channel, which ultimately results in **increasing of threshold voltage**. The expression of threshold voltage is given as,  
@@ -347,7 +347,7 @@ It is the maximum allowable noise voltage input signal can have without causing 
   
 <img width="1600" height="900" alt="21" src="https://github.com/user-attachments/assets/b2f54eee-1834-4efc-9ec1-7b5e0fa6c023" />  
 
-<br>  
+<br><br> 
 
 * Any input voltage between 0 and V<sub>IL</sub> will be treated as logic low  
 * Any input voltage between V<sub>IH</sub> and V<sub>DD</sub> will be treated as logic high  
@@ -388,7 +388,7 @@ At lower technology nodes, the value of the power supply also reduces (low suppl
   
 * **Etching Process:** Etching in semiconductor manufacturing is a critical, precise process used to remove unwanted material from a wafer's surface, creating intricate 3D patterns, circuits, and components. An actual mask may create an uneven or distorted channel length or width, which will directly impact the drain current of the MOS device
    
-<img width="1600" height="900" alt="25" src="https://github.com/user-attachments/assets/2bb7adfe-1ee5-46d4-9fd5-3194813a850d" />  
+<img width="1600" height="900" alt="25" src="https://github.com/user-attachments/assets/6652a69b-2f36-4d26-ab9e-a6119d136c3f" />
   
 <br>
     
@@ -396,10 +396,9 @@ At lower technology nodes, the value of the power supply also reduces (low suppl
   
 <img width="1536" height="661" alt="ChatGPT Image Mar 8, 2026, 03_30_13 PM" src="https://github.com/user-attachments/assets/1cdc6bbd-7213-4ad6-bddd-74c49e69305f" />
 
-<br>
-<br>
-      
-* Now, let's perform some SPICE simulation and find whether these device variations actually affect the performance of the CMOS Inverter
+<br>  
+
+**Now, let's perform some SPICE simulation and find whether these device variations actually affect the performance of the CMOS Inverter**
 
 <br>
   
