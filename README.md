@@ -133,6 +133,7 @@ where x varies from 0  to L
 <p align="center">
 <img src="https://latex.codecogs.com/svg.image?I_D=\frac{1}{2}\mu_nC_{ox}\frac{W}{L}(V_{GS}-V_T)^2(1+\lambda V_{DS})" />
 </p>  
+
 where λ is the Channel Length Modulation parameter  
   
 > **Conclusion**  
