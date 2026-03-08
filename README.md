@@ -378,10 +378,11 @@ At lower technology nodes, the value of the power supply also reduces (low suppl
   
 ### Device Variation  
   
-* **Etching Process:** Etching in semiconductor manufacturing is a critical, precise process used to remove unwanted material from a wafer's surface, creating intricate 3D patterns, circuits, and components. An actual mask may create an uneven or distorted channel length or width, which will directly impact the drain current of the MOS device   
-<img width="1600" height="900" alt="25" src="https://github.com/user-attachments/assets/2bb7adfe-1ee5-46d4-9fd5-3194813a850d" />
-
-<br><br>
+* **Etching Process:** Etching in semiconductor manufacturing is a critical, precise process used to remove unwanted material from a wafer's surface, creating intricate 3D patterns, circuits, and components. An actual mask may create an uneven or distorted channel length or width, which will directly impact the drain current of the MOS device
+   
+<img width="1600" height="900" alt="25" src="https://github.com/user-attachments/assets/2bb7adfe-1ee5-46d4-9fd5-3194813a850d" />  
+  
+<br>
     
 * **Oxide Thickness:** During fabrication, the oxidation process may sometimes result in uneven formation or deposition of the oxide layer, due to which the oxide thickness changes, and it will ultimately result in variation of drain current
 
